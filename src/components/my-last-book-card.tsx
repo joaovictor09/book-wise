@@ -1,23 +1,12 @@
-import { Star } from 'lucide-react'
 import Image from 'next/image'
 import { FilledStar } from './FilledStar'
+import { Star } from 'lucide-react'
 
-export function CommentCard() {
+export function MyLastBookCard() {
   return (
-    <div className="w-full rounded-lg bg-gray-700 p-6">
+    <div className="w-full rounded-lg bg-gray-600 p-6">
       <div className="flex gap-4">
-        <Image
-          src="https://placehold.co/100x100/png"
-          height={40}
-          width={40}
-          quality={100}
-          className="h-10 w-10 rounded-full bg-gray-800"
-          alt=""
-        />
-        <div className="flex flex-col">
-          <span>Jaxson Dias</span>
-          <span className="text-sm text-gray-400">Hoje</span>
-        </div>
+        <span className="text-sm text-gray-400">Há 2 dias</span>
 
         <div className="ml-auto flex gap-1 text-purple-100">
           <FilledStar />
